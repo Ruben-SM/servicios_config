@@ -14,11 +14,9 @@ spring:
         implicit-strategy: org.hibernate.boot.model.naming.ImplicitNamingStrategyLegacyJpaImpl
         physical-strategy: org.hibernate.boot.model.naming.PhysicalNamingStrategyStandardImpl
 eureka:
-  #instance:
-    #hostname: localhost
   client:
     register-with-eureka: true
     service-url:
       defaultZone: http://${hosteureka}:8761/eureka
-    instance:
-      hostname: ${hostreal}
+  instance:
+    hostname: ${hostreal}
