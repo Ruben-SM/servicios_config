@@ -17,6 +17,6 @@ eureka:
   client:
     register-with-eureka: true
     service-url:
-      defaultZone: http://${hosteureka}:8761/eureka
+      defaultZone: http://${hosteureka}:${porteureka}/eureka
   instance:
     hostname: ${hostreal}
