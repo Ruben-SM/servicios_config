@@ -18,5 +18,6 @@ eureka:
     service-url:
       #defaultZone: http://${hosteureka}:${porteureka}/eureka
       defaultZone: http://localhost:8761/eureka
-  #instance:
+  instance:
     #hostname: ${hostreal}
+    hostname: localhost
